@@ -1,3 +1,110 @@
+# 달팽이 배열
+
+> 달팽이처럼, 특정한 순서로 숫자를 차례로 채우는 프로그램이다.
+
+<img width="285" height="225" alt="스크린샷 2026-04-26 142736" src="https://github.com/user-attachments/assets/3fd20c9e-c345-450d-9785-a17108e09e94" />
+
+## Why 이 프로젝트
+**윤성우의 열혈 C 프로그래밍** 이라는 C언어 교재에서 이 문제가 나오게 되었다.
+
+배열을 배운지 얼마 되지 않은 때여서, 이 문제가 어렵게도 느껴졌지만, 꽤 흥미롭기도 했다.
+
+그러하여 내가 이 문제를 풀게 되었다.
+
+## How 접근 방법
+이 문제를 풀기 위해 다음과 같이 접근했다.
+
+1. 배열을 만든다.
+2. 위쪽 -> 오른쪽 -> 아래쪽 -> 왼쪽 순서로 차례대로 숫자를 채운다.
+3. 한 칸 안쪽으로 들어간다.
+4. (2) ~ (3)의 과정을 빈 칸이 없을 때 까지 반복한다.
+
+## Components
+- 우선 넘깁니다.
+
+## Software
+- 언어: C
+- 라이브러리: `<stdio.h>` (표준 입출력)
+
+## Achievements
+- _도전 프로그래밍 3-2번 문제를 해결하였다!_
+
+## License
+Mit License
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    int n;
+    scanf("%d", &n);
+    int arr[100][100]={1};
+
+    for (int count=0; count < (n+1)/2; count++)
+    {
+        if (count>0)
+            arr[count][count]=arr[count][count-1]+1;
+        int i=0;
+
+        //위쪽 채우기
+        for (i=count; i<n-count-1; i++)
+            arr[count][i+1]=arr[count][i]+1;
+        //오른쪽 채우기
+        for (i=count; i<n-count-1; i++)
+            arr[i+1][n-1-count]=arr[i][n-1-count]+1;
+        //아래쪽 채우기
+        for (i=n-count-1; i>count; i--)
+            arr[n-1-count][i-1]=arr[n-1-count][i]+1;
+        //왼쪽 채우기
+        for (i=n-count-1; i>count+1; i--)
+            arr[i-1][count]=arr[i][count]+1;
+    }
+
+    for (int i=0; i<n; i++)
+    {
+        for (int j=0; j<n; j++)
+            printf("%-5d ", arr[i][j]);
+        printf("\n\n");
+    }
+
+    return 0;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+이하 테스트
+
 # 제목 1
 
 ## 제목 2
