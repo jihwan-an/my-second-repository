@@ -186,6 +186,28 @@ git status --> 상태
 
 git add 파일 -->스테이지 올리기
 
+> git . --> 전체 add (. 현재폴더, .. 상위폴더)
+
 git commit -->커밋
 
 git commit -m "메시지" --> 커밋 + 메시지
+
+rm 파일명 --> 파일삭제
+
+---
+git log
+git log --oneline
+git diff
+
+---
+## vi 사용법
+
+vi 파일이름 --> 열기
+
+제어모드 :w 저장, :q 종료, :wq 저장하고 종료, :q! 강제종료
+
+일반모드
+
+입력모드 i, a, o 키
+
+Visual 모드
