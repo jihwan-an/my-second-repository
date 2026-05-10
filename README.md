@@ -137,4 +137,20 @@ int main(void)
 각주 예시(^1)
 
 (^1)각주 내용
- 
+
+---
+git 사용법
+
+유저@기기명 ㅡㅑㅜㅎㅈ64 폴더
+
+ls= list 파일 목록
+ls -al --> 숨겨진 거 까지 다 자세히
+mkdir --> make directory
+cd --> change directory (이동)
+git init --> 
+cd .. --> 상위 폴더
+pwd --> print now dir. name
+cd . --> move to now dir.
+~ = /c/Users/onlys
+git config --global user.name 유저이름
+git config --global user.email 유저이메일
