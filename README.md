@@ -139,18 +139,53 @@ int main(void)
 (^1)각주 내용
 
 ---
-git 사용법
+# git 사용법
 
-유저@기기명 ㅡㅑㅜㅎㅈ64 폴더
+유저@기기명 MINGw64 폴더
+
+---
 
 ls= list 파일 목록
+
 ls -al --> 숨겨진 거 까지 다 자세히
+
+---
+
 mkdir --> make directory
+
 cd --> change directory (이동)
-git init --> 
+
+
+
 cd .. --> 상위 폴더
+
 pwd --> print now dir. name
+
 cd . --> move to now dir.
+
 ~ = /c/Users/onlys
-git config --global user.name 유저이름
+
+---
+git config --global user.name 유저이름 -->--global은, 모든 폴더 의미. 공동작업시 뺴도 됨
+
 git config --global user.email 유저이메일
+
+---
+
+echo 문자열 : 표준출력
+
+echo "hi" > 파일: 파일 새로 만들고, 스트림이 그 파일
+
+echo "hi" >> 파일: 기존 파일에다가
+
+---
+
+git init --> git 초기화
+
+git status --> 상태
+
+git add 파일 -->스테이지 올리기
+
+git commit -->커밋
+
+git commit -m "메시지" --> 커밋 + 메시지
