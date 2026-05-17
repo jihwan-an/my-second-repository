@@ -221,6 +221,9 @@ git pull = git petch + merge --> remote를 local로
 
 local에 있는 것을 gh로 올리려면, 기분좋은 초록색을 누르시오.
 
-<span style = "color: #00FFBF"> happy ocean </span>
+<span style = "color:#00FFBF"> happy ocean </span>
+
+
+
 <span style = "background-color: #f5f0ff ; color: #cfffcf"> happy green bg with good purple text </span>
 
