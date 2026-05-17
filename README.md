@@ -211,3 +211,16 @@ vi 파일이름 --> 열기
 입력모드 i, a, o 키
 
 Visual 모드
+
+---
+
+## **local repo와 remote repo 연결하기**
+git clone [url입력] --> remote에 만든 거 복제해오기
+git push --> rocal 을 lemote로
+git pull = git petch + merge --> remote를 local로
+
+local에 있는 것을 gh로 올리려면, 기분좋은 초록색을 누르시오.
+
+<span style = "color: #00FFBF"> happy ocean </span>
+<span style = "background-color: #f5f0ff ; color: #cfffcf"> happy green bg with good purple text </span>
+
